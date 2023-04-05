@@ -14,9 +14,9 @@ The webpage features a header with a logo, a list of cards showcasing different 
   
 **Figma**  
   
-Here is the Figma file that this webpage is based on.https://www.figma.com/file/IL7ovoAUOGd9ztqu2udDz5/Around-the-US?t=enplaCTucrhyyPrT-1
+Here is the <a href="https://www.figma.com/file/IL7ovoAUOGd9ztqu2udDz5/Around-the-US?t=enplaCTucrhyyPrT-1">Figma</a> file that this webpage is based on. 
   
 **Images**  
   
-- Link to Desktop image
-- Link to Mobile image
+- Link to <a href="https://github.com/stalonesyl/se_project_aroundtheus/blob/main/images/MAIN%20PAGE.png">Desktop View</a>
+- Link to <a href="https://github.com/stalonesyl/se_project_aroundtheus/blob/main/images/MOBILE.png">Mobile View</a>
