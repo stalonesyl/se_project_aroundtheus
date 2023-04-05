@@ -8,14 +8,15 @@
   
 **Intro**
   
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
+I created a responsive webpage titled "Around the US" for my portfolio. It includes semantic HTML elements, CSS styles for an engaging user interface, and a profile section with interactivity.
+
+The webpage features a header with a logo, a list of cards showcasing different locations, and a footer with copyright information. Overall, this project showcases my skills in creating a responsive and visually appealing webpage, making it a valuable addition to my portfolio.
   
 **Figma**  
   
-* [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
+Here is the Figma file that this webpage is based on.https://www.figma.com/file/IL7ovoAUOGd9ztqu2udDz5/Around-the-US?t=enplaCTucrhyyPrT-1
   
 **Images**  
   
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+- Link to Desktop image
+- Link to Mobile image

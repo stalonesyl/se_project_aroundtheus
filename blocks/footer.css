@@ -13,6 +13,13 @@
     color: #545454;
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .footer__copyright{
+        padding-left: 19px;
+    }
+}
+
 @media screen and (max-width: 320px){
     .footer{
         padding-top: 0;
@@ -21,11 +28,5 @@
     }
     .footer__copyright{
         font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .footer__copyright{
-        padding-left: 19px;
     }
 }
