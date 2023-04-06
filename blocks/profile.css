@@ -113,9 +113,6 @@
     text-align: center;
     font-size: 14px;
     margin: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   .profile__edit-button {
@@ -133,8 +130,5 @@
   .profile__title {
     font-size: 22px;
     margin-bottom: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 }
