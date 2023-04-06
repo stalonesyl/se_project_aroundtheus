@@ -1,24 +1,22 @@
-.header{
-    margin-top: 45px;
-    border-bottom: 1px solid rgba(84, 84, 84, 70);  
+.header {
+  margin-top: 45px;
+  border-bottom: 1px solid rgba(84, 84, 84, 70);
 }
 
-.header__logo{
-    margin-bottom: 41px;
+.header__logo {
+  margin-bottom: 41px;
 }
-
 
 @media screen and (max-width: 320px) {
-    .header{
-        margin-top: 28px;
-        max-width: 100%;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    .header__logo{
-        width: 126px;
-        margin-bottom: 32px;
-        margin-left: 27px;
-    }
-
+  .header {
+    margin-top: 28px;
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .header__logo {
+    width: 126px;
+    margin-bottom: 32px;
+    margin-left: 27px;
+  }
 }

@@ -1,24 +1,22 @@
-.page{
-    background-color: #000;
-    color: #fff;
-    font-family: "Inter", sans-serif;
+.page {
+  background-color: #000;
+  color: #fff;
+  font-family: "Inter", sans-serif;
 }
-.page__content{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.page__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-.page__section{
-    max-width: 880px;
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    
+.page__section {
+  max-width: 880px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 900px){
-    .page__section{
-        max-width: calc(100% - 40px);
-    }
-    
+@media screen and (max-width: 900px) {
+  .page__section {
+    max-width: calc(100% - 40px);
+  }
 }
