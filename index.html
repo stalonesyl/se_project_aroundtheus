@@ -16,9 +16,9 @@
   </head>
 
   <body class="page">
-    <div class="modal">
+    <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
-          <button class="modal__close-button"></button>
+          <button class="modal__close-button" id="profile-modal-close-btn"></button>
           <p class="modal__heading">Edit profile</p>
           <form class="modal__form">
               <input class="modal__form-input" type="text" name="title" placeholder="Jacques Cousteau">
@@ -49,6 +49,7 @@
             <button
               class="profile__edit-button"
               aria-label="edit profile"
+              id="profile-edit-button"
               type="button"
             ></button>
             <p class="profile__description">Explorer</p>
