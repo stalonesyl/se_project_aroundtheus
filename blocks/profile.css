@@ -11,6 +11,7 @@
   align-items: center;
   grid-template-areas: "title button" "description description";
   grid-template-columns: minmax(auto, 373px) auto;
+  gap: 8px 6px;
 }
 .profile__edit-button {
   background: transparent url(../images/Edit-Icon.svg) center no-repeat;

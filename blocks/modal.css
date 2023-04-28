@@ -1,130 +1,121 @@
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    padding: 0 19px;
-    display: none;
-  }
-  
-  .modal_opened {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  margin: 0;
+  padding: 0 19px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.modal_opened {
+  display: flex;
+}
+
+.modal__container {
+  position: relative;
+  margin: auto;
+  margin-top: 195px;
+  padding: 36px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.modal__close {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: calc(100% + 5px);
+  background: url(../images/Close.svg) transparent center no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: opacity 1s ease-in 0s;
+}
+
+.modal__close:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+
+.modal__heading {
+  margin: 0 0 54px 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.modal__form {
+  width: 358px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.modal__input {
+  padding: 0 0 13px 0;
+  border: none;
+  border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+}
+
+.modal__input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.modal__button {
+  width: 100%;
+  height: 50px;
+  margin: 18px 0 0;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  background-color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  transition: opacity 1s ease-in 0s;
+}
+
+.modal__button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 540px) {
   .modal__container {
-    position: relative;
-    background-color: white;
-    padding: 36px;
-    border-radius: 10px;
-    width: 358px;
+    padding: 25px 22px;
+    margin-top: 123px;
   }
-  
-  .modal__close-button {
-    border: none;
-    position: absolute;
-    top: -45px;
-    right: -45px;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    background-image: url("../images/Close.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .modal__close-button:hover {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-  
-  .modal__heading {
-    max-width: 330px;
-    font-family: "Inter", sans-serif;
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 22px;
-    margin-top: 0;
-    margin-bottom: 54px;
-    color: #000;
-  }
+
   .modal__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 238px;
   }
-  
-  .modal__form-input {
-    height: 27px;
-    margin-bottom: 30px;
-    padding: 0;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16.94px;
-    letter-spacing: 0em;
-    text-align: left;
+
+  .modal__close {
+    width: 26px;
+    height: 26px;
+    bottom: calc(100% + 14px);
+    left: calc(100% - 26px);
   }
-  
-  .modal__form-input:last-of-type {
-    margin-bottom: 0;
-  }
-  
-  .modal__form-input::-webkit-input-placeholder {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16.94px;
-    color: black;
-  }
-  
+
   .modal__button {
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
+    height: 46px;
+    margin: 15px 0 0;
+    font-size: 14px;
+  }
+
+  .modal__heading {
+    margin: 0 0 75px 0;
     font-size: 18px;
-    line-height: 21.78px;
-    margin-top: 48px;
-    max-width: 358px;
-    height: 50.15px;
-    width: 430px;
   }
-  
-  .modal__button:hover {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-  
-  @media screen and (max-width: 500px) {
-    .modal__container {
-      width: 252px;
-      padding: 25px 22px 25px 22px;
-    }
-  
-    .modal__close-button {
-      width: 26px;
-      height: 26px;
-      right: 0px;
-    }
-  
-    .modal__heading {
-      width: 238px;
-      margin-bottom: 75px;
-      font-size: 18px;
-    }
-  
-    .modal__button {
-      width: 238px;
-    }
-  }
+}
