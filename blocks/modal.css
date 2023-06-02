@@ -14,7 +14,7 @@
   transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 
-.modal__open {
+.modal_open {
   display: flex;
   visibility: visible;
   opacity: 1;
