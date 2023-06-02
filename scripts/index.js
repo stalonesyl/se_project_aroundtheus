@@ -68,11 +68,11 @@ function renderCard(cardData, wrapper) {
 }
 
 function openModal(modal) {
-  modal.classList.add("modal__open");
+  modal.classList.add("modal_open");
 }
 
 function closeModal(modal) {
-  modal.classList.remove("modal__open");
+  modal.classList.remove("modal_open");
 }
 
 function getCardElement(data) {
@@ -118,8 +118,8 @@ function handleAddCardSubmit(evt) {
   const name = addCardTitleInput.value;
   const link = addCardURLInput.value;
   renderCard({ name, link }, cardWrap);
-  closeModal(profileEditModal);
-  profileEditForm.reset();
+  closeModal(addCardModal);
+  addCardModalForm.reset();
 }
 
 /* ----------------------- EVENT LISTENERS ----------------------- */
