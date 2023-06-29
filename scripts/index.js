@@ -28,6 +28,7 @@ const initialCards = [
 
 /* ----------------------- ELEMENTS ----------------------- */
 
+const button = document.querySelector("#submit-button");
 
 const profileEditButton = document.querySelector("#profile-edit-button");
 const profileEditModal = document.querySelector("#profile-edit-modal");
@@ -60,6 +61,20 @@ const previewImageModalClose = document.querySelector("#preview-modal-close");
 const cardPreviewTitle = document.querySelector("#card-preview-title");
 const previewImage = document.querySelector("#card-preview-image");
 
+// Added for project 6 
+const closeModalEscKey = (evt) => {
+  if (evt.key === "Escape") {
+    const openModal = document.querySelector(".modal__open");
+    closeModal(openModal);
+  }
+};
+
+const closeModalClick = (evt) => {
+  if (evt.target === evt.currentTarget) {
+    closeModal(evt.currentTarget);
+  }
+};
+
 /* ----------------------- FUNCTIONS ----------------------- */
 
 function renderCard(cardData, wrapper) {
@@ -69,10 +84,16 @@ function renderCard(cardData, wrapper) {
 
 function openModal(modal) {
   modal.classList.add("modal_open");
+
+  document.addEventListener("keydown", closeModalEscKey);
+  modal.addEventListener("mousedown", closeModalClick);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_open");
+
+  document.removeEventListener("keydown", closeModalEscKey);
+  modal.removeEventListener("mousedown", closeModalClick);
 }
 
 function getCardElement(data) {
@@ -120,6 +141,9 @@ function handleAddCardSubmit(evt) {
   renderCard({ name, link }, cardWrap);
   closeModal(addCardModal);
   addCardModalForm.reset();
+  const inputEls = [...addCardModal.querySelectorAll(".modal__input")];
+  const submitButton = addCardModal.querySelector(".modal__button");
+  toggleButtonState(inputEls, submitButton, config);
 }
 
 /* ----------------------- EVENT LISTENERS ----------------------- */

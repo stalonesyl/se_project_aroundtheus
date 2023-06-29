@@ -100,13 +100,25 @@
   width: 358px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 
 .modal__input {
+  margin: 0 0 5px 0;
   padding: 0 0 13px 0;
   border: none;
   border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+}
+
+.modal__input-error {
+  min-height: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #ff0000;
+}
+
+.modal__input_type_error {
+  border-bottom: 1px rgba(255, 0, 0) solid;
 }
 
 .modal__input::placeholder {
@@ -131,9 +143,20 @@
   transition: opacity 0.3s ease-in 0s;
 }
 
-.modal__button:hover {
+.modal__button:hover:not(:disabled) {
   cursor: pointer;
-  opacity: 80%;
+  opacity: 0.8;
+}
+
+.modal__button_disabled {
+  background-color: #ffffff;
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.modal__button_disabled:hover {
+  opacity: 1;
+  cursor: default;
 }
 
 @media screen and (max-width: 540px) {
