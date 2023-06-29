@@ -64,7 +64,7 @@ const previewImage = document.querySelector("#card-preview-image");
 // Added for project 6 
 const closeModalEscKey = (evt) => {
   if (evt.key === "Escape") {
-    const openModal = document.querySelector(".modal__open");
+    const openModal = document.querySelector(".modal_open");
     closeModal(openModal);
   }
 };
@@ -84,14 +84,12 @@ function renderCard(cardData, wrapper) {
 
 function openModal(modal) {
   modal.classList.add("modal_open");
-
   document.addEventListener("keydown", closeModalEscKey);
   modal.addEventListener("mousedown", closeModalClick);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_open");
-
   document.removeEventListener("keydown", closeModalEscKey);
   modal.removeEventListener("mousedown", closeModalClick);
 }
