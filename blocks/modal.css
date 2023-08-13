@@ -1,3 +1,6 @@
+/* ------------------------ BASE STYLES ------------------------ */
+
+/* Modal base styling */
 .modal {
   margin: 0;
   padding: 0 19px 0;
@@ -14,13 +17,14 @@
   transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 
-.modal_open {
-  display: flex;
+/* Modal active/open state */
+.modal__open {
   visibility: visible;
   opacity: 1;
   transition-delay: 0s;
 }
 
+/* Main modal container */
 .modal__container {
   position: relative;
   margin: auto;
@@ -30,6 +34,7 @@
   border-radius: 10px;
 }
 
+/* Preview modal container for images */
 .modal__preview-container {
   position: relative;
   margin: 0 auto 0;
@@ -37,11 +42,13 @@
   margin-top: 90px;
 }
 
+/* Modal image preview styling */
 .modal__preview-image {
   max-width: 75vw;
   max-height: 75vh;
 }
 
+/* Caption/title for the preview image */
 .modal__preview-title {
   margin: 10px 0;
   font-style: normal;
@@ -50,6 +57,7 @@
   line-height: 1.21;
 }
 
+/* Close button styles */
 .modal__close {
   width: 40px;
   height: 40px;
@@ -60,33 +68,16 @@
   background: url(../images/Close.svg) transparent center no-repeat;
   border: none;
   cursor: pointer;
-  transition: opacity 1s ease-in 0s;
+  transition: opacity 0.3s ease-in 0s;
 }
 
+/* Hover effect for close button */
 .modal__close:hover {
   cursor: pointer;
-  opacity: 60%;
+  opacity: 0.6;  /* Adjusted to correct percentage representation */
 }
 
-.modal__preview-close {
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  position: absolute;
-  bottom: calc(100% + 5px);
-  left: calc(100% + 5px);
-  background: url(../images/Close.svg) transparent center no-repeat;
-  border: none;
-  cursor: pointer;
-  transition: opacity 0.3s ease-in 0s;
-}
-
-.modal__preview-close:hover {
-  cursor: pointer;
-  opacity: 60%;
-  transition: opacity 0.3s ease-in 0s;
-}
-
+/* Modal heading styles */
 .modal__heading {
   margin: 0 0 54px 0;
   font-style: normal;
@@ -96,12 +87,14 @@
   color: #000;
 }
 
+/* Styles for the form inside the modal */
 .modal__form {
   width: 358px;
   display: flex;
   flex-direction: column;
 }
 
+/* Input field styles */
 .modal__input {
   margin: 0 0 5px 0;
   padding: 0 0 13px 0;
@@ -109,6 +102,15 @@
   border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
 }
 
+/* Placeholder styles for input fields */
+.modal__input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000;
+}
+
+/* Error message styles for invalid input */
 .modal__input-error {
   min-height: 30px;
   font-weight: 400;
@@ -117,17 +119,12 @@
   color: #ff0000;
 }
 
+/* Input field error styling */
 .modal__input_type_error {
   border-bottom: 1px rgba(255, 0, 0) solid;
 }
 
-.modal__input::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
-  color: #000;
-}
-
+/* Submit button styles */
 .modal__button {
   width: 100%;
   height: 50px;
@@ -143,22 +140,28 @@
   transition: opacity 0.3s ease-in 0s;
 }
 
+/* Hover effect for the button */
 .modal__button:hover:not(:disabled) {
-  cursor: pointer;
   opacity: 0.8;
+  cursor: pointer;
 }
 
+/* Disabled button styles */
 .modal__button_disabled {
   background-color: #ffffff;
   border: 1px rgba(0, 0, 0, 0.2) solid;
   color: rgba(0, 0, 0, 0.2);
 }
 
+/* Hover effect for disabled button - no effect */
 .modal__button_disabled:hover {
   opacity: 1;
   cursor: default;
 }
 
+/* ------------------------ RESPONSIVE STYLES ------------------------ */
+
+/* Styles for screens less than or equal to 540px in width */
 @media screen and (max-width: 540px) {
   .modal__container {
     padding: 25px 22px;
@@ -185,12 +188,5 @@
   .modal__heading {
     margin: 0 0 75px 0;
     font-size: 18px;
-  }
-
-  .modal__preview-close {
-    width: 30px;
-    height: 30px;
-    bottom: calc(100% + 3px);
-    left: calc(100% + 3px);
   }
 }
