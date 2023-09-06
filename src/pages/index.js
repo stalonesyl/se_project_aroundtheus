@@ -63,7 +63,7 @@ const profilePopup = new PopupWithForm(
   "#profile-edit-modal",
   handleProfileEditSubmit
 );
-profilePopup.setEventListener();
+profilePopup.setEventListeners();
 
 profileEditButton.addEventListener("click", () => {
   const userData = newUser.getUserInfo();
@@ -108,7 +108,7 @@ const addCardPopup = new PopupWithForm("#add-card-modal", (inputValues) => {
   cardListSection.prependItem(newCard);
   addCardPopup.close();
 });
-addCardPopup.setEventListener();
+addCardPopup.setEventListeners();
 
 profileAddButton.addEventListener("click", () => {
   addFormValidator.resetValidation();

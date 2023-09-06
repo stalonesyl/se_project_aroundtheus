@@ -26,7 +26,7 @@ export default class PopupWithForm extends Popup {
   }
 
   // Method to set event listeners for the form
-  setEventListener() {
+  setEventListeners() {
     // Call the parent method to set common event listeners
     super.setEventListeners();
     // Add submit event listener to the form
